@@ -33,13 +33,13 @@ Recall on the failure class, since missing a real failure is more costly than a 
 
 All models evaluated on the same held-out test set (real-world 3.4% failure distribution).
 
-| Model | Precision | Recall | F1 | ROC-AUC |
-|:---|:---:|:---:|:---:|:---:|
-| Dummy Classifier | 0.000 | 0.000 | 0.000 | 0.500 |
-| Logistic Regression (no SMOTE) | 0.600 | 0.132 | 0.217 | 0.901 |
-| Logistic Regression (SMOTE) | 0.153 | 0.794 | 0.257 | 0.895 |
-| Random Forest (SMOTE) | 0.426 | 0.721 | 0.536 | 0.958 |
-| **XGBoost (final model)** | **0.626** | **0.838** | **0.717** | **0.978** |
+| Model | Accuracy | Precision | Recall | F1 | ROC-AUC |
+|:---|:---:|:---:|:---:|:---:|:---:|
+| Dummy Classifier | 96.6% | 0.000 | 0.000 | 0.000 | 0.500 |
+| Logistic Regression (no SMOTE) | 96.8% | 0.600 | 0.132 | 0.217 | 0.901 |
+| Logistic Regression (SMOTE) | 84.4% | 0.153 | 0.794 | 0.257 | 0.895 |
+| Random Forest (SMOTE) | 95.8% | 0.426 | 0.721 | 0.536 | 0.958 |
+| **XGBoost (final model)** | **97.5%** | **0.626** | **0.838** | **0.717** | **0.978** |
 
 Recall went from 0% to 83.8%, so the system now catches 84 out of every 100 real failures.
 
